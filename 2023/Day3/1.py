@@ -2,9 +2,9 @@ ans = 0
 
 def isSymbol(character):
     # Check if the character is ASCII and not alphanumeric
-    return character.isascii() and not character.isalnum() and not character == "." and not character == "\n"
+    return character.isascii() and not character.isalnum() and not character == "." and not character == "\n" and not character == ""
 
-file = open("input2.txt","r")
+file = open("input.txt","r")
 lines = file.readlines()
 
 lineIndex = 0
